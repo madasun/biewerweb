@@ -1,178 +1,224 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;600;700;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/840d938f5b.js" crossorigin="anonymous"></script>
+    <title>American Biewer's of Tennessee</title>
   </head>
-  <body class="bg-[#E7F5FF]">
-    <img src="./white-bg.png" class="absolute w-screen -z-20" />
-    <header class="bg-white sticky top-0 z-50">
-        <div class="container mx-auto flex items-center justify-between relative">
-            <img src="./nav-dot-pattern.svg" class="absolute right-full -top-4 mr-12" />
-            <a href="/">
-            <img src="./logo.png" class="ml-10" alt="American Biewers Logo" />
-            </a>
-            <nav>
-                <ul class="flex items-center mr-10">
-                    <li>
-                        <a href="#" class="py-2 mx-5 hover:border-b-2 border-[#DF4C73]">Home</a>
-                    </li>
-                    <li>
-                        <a href="#aboutus" class="py-2 mx-5 hover:border-b-2 border-[#DF4C73]">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#ourdogs" class="py-2 mx-5 hover:border-b-2 border-[#DF4C73]">Our Dogs</a>
-                    </li>
-                    <li>
-                        <a href="#puppies" class="py-2 mx-5 hover:border-b-2 border-[#DF4C73]">Puppies</a>
-                    </li>
-                    <li>
-                        <button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold p-3 mx-5 rounded-md text-center flex items-center inline-flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                        </svg>Contact Us</button></a>
-                    </li>
-                </ul>
-            </nav>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <a role="none" href="#"><img class="logo" src="./logo-w.png" alt=""></a>
+      <button class="hamburger" tabindex="0" aria-labelledby="navigation" aria-expanded="false" aria-haspopup="true">
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+      </button>
+    
+      <nav>
+        <ul id="navigation" role="menu" aria-hidden="true">
+          <li role="none" tabindex="-1"><a role="menuitem" href="#Puppies" class="nav-link">Puppies</a></li>
+          <li role="none" tabindex="-1"><a role="menuitem" href="#About" class="nav-link">About</a></li>
+          <li role="none" tabindex="-1"><a role="menuitem" href="#Dogs" class="nav-link">Our Dogs</a></li>
+          <li role="none" tabindex="-1"><a role="menuitem" href="#Contact" class="contact-link">Contact Us</a></li>
+          <li role="none" tabindex="-1"><a role="menuitem" href="#" class="nav-link"><i class="fa-solid fa-phone-flip" style="padding-right: 3px;"></i> 423-867-5309</a></li>
+        </ul>
+      </nav>
+    </header> 
+
+    <section class="hero">
+      <div class="overlay">
+        <div class="hero-text">
+          <div class="hero-perfect">Find your perfect 
+          <br>companion</div>
+          <p>Family-raised puppies for sale in Tennessee. Our top priority is to breed and raise genetically healthy, beautiful, breed-standard puppies in a loving home environment.</p>
         </div>
-    </header>
-    <section class="hero py-44 relative">
-        <img src="./hero-dot-pattern.svg" class="absolute right-14 top-14">
-        <div class="container mx-auto">
-            <h1 class="text-2xl md:text-4xl text-slate-800 font-bold ml-10">Welcome to American Biewers!</h1>
-            <p class="text-xl md:text-2xl text-slate-700 max-w-lg mt-6 ml-10">Family raised AKC puppies for sale in Tennessee. Our top priority is to breed and raise genetically healthy, beautiful, breed-standard puppies in a loving home environment.</p>
-            <p class="mt-20 px-10 py-2 border-2 border-[#D1476B] md:64 md:w-80 rounded-lg text-[#D1476B] text-xl md:text-2xl font-semibold text-center ml-10">Expecting New Litter 09/15/2022</p>
-            <img src="./hero-dog.png" class="invisible md:invisible lg:visible absolute top-8 right-0 w-1/2 z-10" alt="" />
-            <img src="./bg-vector.svg" class="absolute -top-8 right-0 w-2/3 -z-10" alt=""  />
-        </div>
+      </div>
     </section>
+
+    <article class="about-us">
+      <p class="brown-title">welcome to american biewer terriers!</p>
+      <p class="other-title">We are caring, knowledgable AKC Breeders of Merit</p>
+      <p class="text-block">Utem venenatis pellentesque eros, quis malesuada velit imperdiet sit amet. Cras bibendum non tellus eget vulputate. Aenean tincidunt nisl non convallis pretium. 
+        Maecenas lacus purus, iaculis sed quam sit amet, ornare ullamcorper urna. Aenean tristique, nunc in aliquam egestas, nisi neque tincidunt turpis, finibus pulvinar mauris augue in nulla. 
+        Integer vitae quam eget felis mattis dictum. Ut sodales tortor eu quam molestie pulvinar.</p>
+      <a id="About"></a>
+      <div class="wrapper">
+        <div class="image"><img src="./TN_photo.png" style="max-height: 700px;" class="about-photo" /></div>
+        <div class="content">
+          <h1 class="titles"><img src="./line.png" height="5" style="vertical-align: middle;" class="line-media" /> About Us</h1>
+          <p>Inam ornare diam neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis sapien quis quam gravida, et bibendum nisi aliquet. Nulla eu aliquet lacus, 
+            at suscipit metus. Suspendisse potenti. Morbi eleifend sapien risus.</p>
+          <ul>
+            <li>Registered with AKC</li>
+            <li>Educated Breed Conservator</li>
+            <li>Certified Responsible Breeder</li>
+          </ul>
+          <p>Integer id elit quis turpis tincidunt tristique. Suspendisse eu rhoncus neque, sollicitudin ornare leo. Fusce vitae lobortis arcu, a auctor lorem.</p>
+          <p>Suspendisse eu rhoncus neque, sollicitudin ornare leo. Fusce vitae lobortis arcu, a auctor lorem. In ornare diam neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent 
+            iaculis sapien quis quam gravida, et bibendum nisi aliquet. Nulla eu aliquet lacus, 
+            at suscipit metus. Suspendisse potenti. Morbi eleifend sapien risus.</p>
+          <p><b>Fusce quis arcu posuere sem lobortis fringilla vitae id enim. Donec vitae justo felis. Cursus metus aliquam eleifend mi.</b></p>
+        </div>
+      </div>
+      <section class="about-cards">
+        <div class="card">
+          <img src="./whyus-1.png" height="150" />
+          <h1 class="other-title">Health Guarantee</h1>
+          <p>Habitant morbi tristique senectus et netus et. Tortor condimentum lacinia quis vel eros donec ac odio. Sem fringilla ut morbi tincidunt augue interdum velit euismod.</p>
+          <a href="#"><button class="learnbtn">Learn More</button></a>
+        </div>
+        <div class="card">
+          <img src="./whyus-2.png" height="150" />
+          <h1 class="other-title">Transport Included</h1>
+          <p>Nunc metus arcu, consequat eu sodales consectetur, tincidunt commodo orci. Nullam molestie nec enim ut laoreet. Cras pretium tortor nunc, eu gravida massa rhoncus ac.</p>
+          <a href="#"><button class="learnbtn">Learn More</button></a>
+        </div>
+        <div class="card">
+          <img src="./whyus-3.png" height="150" />
+          <h1 class="other-title">Advice & Support</h1>
+          <p>Sed pharetra nisi in metus convallis, nec elementum lectus volutpat. Etiam lacinia finibus gravida. Donec non erat quis augue ullamcorper.</p>
+          <a href="#"><button class="learnbtn">Learn More</button></a>
+        </div>        
+      </section>
+    </article>
+
+    <article class="our-dogs">
+      <a id="Dogs"></a>
+      <div class="dogs-wrapper">
+        <p class="other-title" style="padding: 60px 0;">Breeder and Importer of Biewer Terriers Since 1998</p>
+        <img src="./ourdogs_photo.png" class="center-photo" />
+        <div class="content">
+          <h1 class="titles"><img src="./line.png" height="5" style="vertical-align: middle;" class="line-media" /> Our Dogs</h1>
+          <p>Arcu cursus euismod quis viverra. Quam lacus suspendisse faucibus interdum. In dictum non consectetur a. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Dictum non 
+          consectetur a erat nam at lectus urna duis. Facilisis leo vel fringilla est. Libero justo laoreet sit amet cursus sit amet. Cras pretium tortor nunc, eu gravida massa rhoncus ac. Pellentesque 
+          blandit nisl ut urna porta, ut venenatis ipsum fringilla. Donec a auctor ligula. Praesent condimentum ut velit ut auctor. Nullam molestie nec enim ut laoreet. Sisse id ullamcorper dui, eget eleifend leo.</p>
+          <h1 class="titles"><img src="./line.png" height="5" style="vertical-align: middle;" class="line-media" /> The Breed</h1>
+          <p>Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Molestie at elementum eu facilisis sed odio morbi quis. In eu mi bibendum neque. Lectus quam id leo in vitae turpis. Varius 
+          morbi enim nunc faucibus. Sit amet aliquam id diam maecenas ultricies mi eget. Id leo in vitae turpis. Maecenas sed enim ut sem. Dui nunc mattis enim ut tellus elementum sagittis.</p>
+          <p>Non odio euismod lacinia at quis risus. Maecenas ultricies mi eget mauris pharetra et ultrices. Neque egestas congue quisque egestas diam in arcu cursus euismod. Quam lacus suspendisse faucibus 
+          interdum posuere lorem ipsum dolor. Facilisis sed odio morbi quis commodo. Amet risus nullam eget felis eget nunc lobortis. Enim sed faucibus turpis in. Dolor purus non enim praesent elementum. 
+          Aliquet nec ullamcorper sit amet risus nullam eget. Nullam vehicula ipsum a arcu cursus vitae.</p>
+          <p>Et tortor at risus viverra adipiscing at in tellus integer. Facilisis leo vel fringilla est. Eu augue ut lectus arcu bibendum at. Posuere sollicitudin aliquam ultrices sagittis orci a. Congue nisi vitae 
+          suscipit tellus mauris a diam maecenas sed. Fames ac turpis egestas sed tempus urna. Maecenas ultricies mi eget mauris pharetra et. Nisi quis eleifend quam adipiscing vitae proin sagittis. Ultricies lacus 
+          sed turpis tincidunt. Sed cras ornare arcu dui vivamus. Eros donec ac odio tempor.</p>
+        </div>
+      </div>
+      <section class="dogs-cards">
+        <div class="dogcard">
+          <img src="./dams.png" />
+          <p><a href="#"><button class="learnbtn">View All Dams</button></a></p>
+        </div>
+        <div class="dogcard">
+          <img src="./studs.png" />
+          <p><a href="#"><button class="learnbtn">View All Studs</button></a></p>
+        </div>       
+      </section>
+    </article>
+
+    <article class="our-pups">
+      <a id="Puppies"></a>
+      <div class="wrapper" style="background-image: none;">
+        <div class="image"><img src="./pups_photo.png" class="about-photo" /></div>
+        <div class="content">
+          <h1 class="titles"><img src="./line.png" height="5" style="vertical-align: middle;" class="line-media" /> About Puppies</h1>
+          <p>Our puppies are microchipped, vaccinated, and vet-checked. They come with an adoption agreement and a 1 year health guarantee. If you purchase a puppy to be a pet, they will be spayed/neutered. 
+          For breeding rights and registration papers with AKC, ACA, etc. there will be an additional fee.</p>
+          <ul>
+            <li>Velit sed ullamcorper morbi tincidunt ornare massa eget</li>
+            <li>Sodales ut etiam sit amet nisl purus massa</li>
+            <li>Tellus at urna condimentum mattis</li>
+            <li>Augue interdum velit euismod in pellentesque</li>
+          </ul>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+          deserunt mollit anim id est laborum.</p>
+          <p>Auctor urna nunc id cursus metus aliquam eleifend mi in. Ultricies mi quis hendrerit dolor magna eget est lorem. Lectus sit amet est placerat. Nisi scelerisque eu ultrices vitae auctor. Velit aliquet 
+          sagittis id consectetur. Tempus urna et pharetra pharetra massa massa. Erat velit scelerisque in dictum non.</p>
+          <p>Please call/text <b>423-867-5309</b> with any questions! Response time within 24 hours all week.</p>
+          <p style="padding-top: 30px;"><a href="#"><button class="learnbtn" style="margin-right: 20px; margin-bottom: 20px;">Puppy Application</button></a>
+          <a href="#"><button class="learnbtn">Health Guarantee Contract</button></a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="available-pups">
+      <h1 class="titles" style="text-align: center; padding-top: 100px;">Available Puppies</h1>
+      <section class="pup-cards">
+        <div class="pupcard">
+          <img src="./pip_photo.png" />
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px;"><h1 class="other-title">Pip</h1> <h1 style="background-color: #EAF0F0; padding: 8px;">$2700</h1></div>
+          <strong>Born:</strong> 06/10/2022
+          <br><strong>Sex:</strong> Female
+          <br><strong>Available On:</strong> 08/05/2022
+          <br><a href="#"><button class="learnbtn" style="display: flex; align-items: center; margin-top: 30px;">Learn More</button></a>
+        </div>
+        <div class="pupcard">
+          <img src="./merry_photo.png" />
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px;"><h1 class="other-title">Merry</h1> <h1 style="background-color: #EAF0F0; padding: 8px;">$2700</h1></div>
+          <strong>Born:</strong> 06/10/2022
+          <br><strong>Sex:</strong> Male
+          <br><strong>Available On:</strong> 08/05/2022
+          <br><a href="#"><button class="learnbtn" style="display: flex; align-items: center; margin-top: 30px;">Learn More</button></a>
+        </div>
+        <div class="pupcard">
+          <img src="./sam_photo.png" />
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px;"><h1 class="other-title">Sam</h1> <h1 style="background-color: #EAF0F0; padding: 8px;">$2700</h1></div>
+          <strong>Born:</strong> 08/24/2022
+          <br><strong>Sex:</strong> Male
+          <br><strong>Available On:</strong> 10/20/2022
+          <br><a href="#"><button class="learnbtn" style="display: flex; align-items: center; margin-top: 30px;">Learn More</button></a>
+        </div>        
+      </section>    
+    </article>
+
+    <article class="contact-us">
+      <a id="Contact"></a>
+      <div class="contact-wrapper">
+        <aside class="aside aside-1 shadow">
+          <p><b style="font-size: 30px; font-family: 'PT Sans', sans-serif; font-weight: bold; color: #2C4659;">Get in touch:</b>
+          <br><br><u>Office Hours</u>
+          <br>Weekdays: 7 a.m. to 6 p.m.
+          <br>Weekend: 10 a.m. to 3 p.m.
+          <br>-
+          <br><i class="fa-solid fa-phone-flip"></i> Phone: 423-555-0336
+          <br><i class="fa-solid fa-envelope"></i> Email: hello@usbiewer.net
+          <br><i class="fa-solid fa-circle"></i> <a href="#" style="color: #4240A9;">Find us on Facebook!</a>
+          </p>
+          <img src="./contact_photo.png" height="200" />
+        </aside>
+
+        <div class="contact-main">
+          <div class="input-fields">
+            <p style="font-size: 30px; font-family: 'PT Sans', sans-serif; font-weight: bold; color: #2C4659; padding: 30px 0;">Send a message:</p>
+            <label><strong>First & Last Name</strong> <input type="text" autocomplete="name" class="input"></label> 
+            <label><strong>Your Email</strong> <input type="text" autocomplete="email" class="input"></label> 
+            <label><strong>Phone</strong> (optional) <input type="text" autocomplete="name" class="input"></label> 
+            <label><strong>Message</strong> <textarea rows="5" class="input"></textarea></label>
+            <button type="submit" class="learnbtn" style="display: flex; align-items: center; margin-top: 30px;">Submit</button>
+          </div>  
+        </div>
+      </div>
+    </article>
     
-    
-    <img src="./bg-vector02.svg" class="absolute -z-10 md:mt-36 2xl:mt-14 w-screen" alt="" />
-    
-    <div class="container mx-auto max-w-screen-lg relative mt-96 pt-36">
-        <h2 id="aboutus" class="text-5xl font-bold text-[#2C4659] flex flex-col mb-14 text-center" style="font-family: 'Pacifico', cursive;">About Us<br><img src="headers-line.png" class="object-none" /></h2>
-        <div class="grid gap-4">
-            <div class="col-span-3 bg-[#FCFCFC] p-8 rounded-lg drop-shadow-md">
-                <h1 class="font-semibold text-3xl text-center" >Caring & Knowledgable Dog Breeders in Memphis TN</h1>
-                <div class="row-span-2 bg-[#FCFCFC] max-w-xl pt-8 pr-8 rounded-md"><p class="leading-7" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                    <p class="leading-7 mt-6">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <a href="#">
-                    <button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold py-4 px-8 mt-6 rounded-md text-center flex items-center inline-flex">
-                    Learn More <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </button></a>
-                </div>
-            </div>
-            <img src="./TN_photo.png" class="absolute mt-28 -right-8 invisible md:invisible lg:visible max-w-md">
-            <img src="./akc-bom.png" class="absolute mt-20 -right-12 invisible md:invisible lg:visible w-60">
-        </div>
-    </div>
-        
-    <div class="container mx-auto max-w-screen-lg relative mt-96">
-        <h2 id="whyus" class="text-5xl font-bold text-[#2C4659] flex flex-col mb-14 text-center" style="font-family: 'Pacifico', cursive;">Why Us<br><img src="headers-line.png" class="object-none -z-10" /></h2>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md text-center">
-                <div class="flex justify-center"><img src="./whyus-1.png" class="h-28" /></div>
-                <p class="text-xl font-bold text-[#35447C] py-6">Health Guarantee</p>
-                Scelerisque felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md text-center">
-                <div class="flex justify-center"><img src="./whyus-2.png" class="h-28" /></div>
-                <p class="text-xl font-bold text-[#35447C] py-6">Vaccinated & Vet Checked</p>
-                Scelerisque felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md text-center">
-                <div class="flex justify-center"><img src="./whyus-3.png" class="h-28" /></div>
-                <p class="text-xl font-bold text-[#35447C] py-6">Advice & Support</p>
-                Scelerisque felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.
-            </div>
-        </div>
-        <div class="flex justify-center">
-            <a href="#"><button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold py-4 px-8 mt-16 rounded-md text-center flex items-center inline-flex">
-            Learn More 
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            </button></a>
-        </div>
-    </div>
+    <footer style="background: #FCFCFC;">
+      <p class="brown-title" style="padding-top: 50px;">Thank you for visiting American Biewers of Tennessee!</p>
+      <p style="font-size: 14px; font-weight: bold; text-align: center; padding-bottom: 10px;">2022 © American Biewers of Tennessee | <a href="#" style="color: #29221E;">Terms of Service</a> | <a href="#" style="color: #29221E;">Privacy Policy</a></p>
+    </footer>
 
-    <div class="container mx-auto max-w-screen-lg relative mt-96">
-        <h2 id="ourdogs" class="text-5xl font-bold text-[#2C4659] flex flex-col mb-14 text-center" style="font-family: 'Pacifico', cursive;">Our Dogs<br><img src="headers-line.png" class="object-none -z-10" /></h2>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md">
-                <div class="flex justify-center"><img src="./ourdogs-rosie.png" class="h-auto" /></div>
-                <p class="text-sm font-bold text-[#35447C] pt-6 uppercase">Rosie, Certified Therapy Dog</p>
-                <div class="text-xl font-bold text-[#35447C] pb-6 uppercase">Raine of Paws</div>
-                <p class="pb-4">Scelerisque felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.</p>
-                <a href="#" class="text-[#D1476B] font-bold hover:border-b-2 border-[#DF4C73] pt-6">Pedigree Profile</a>
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md">
-                <div class="flex justify-center"><img src="./ourdogs-nash.png" class="h-auto" /></div>
-                <p class="text-sm font-bold text-[#35447C] pt-6 uppercase">Nash, Champion</p>
-                <div class="text-xl font-bold text-[#35447C] pb-6 uppercase">Strait Layne's Heart</div>
-                <p class="pb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                <a href="#" class="text-[#D1476B] font-bold hover:border-b-2 border-[#DF4C73] pt-6">Pedigree Profile</a>
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md">
-                <div class="flex justify-center"><img src="./ourdogs-popcorn.png" class="h-auto" /></div>
-                <p class="text-sm font-bold text-[#35447C] pt-6 uppercase">Popcorn</p>
-                <div class="text-xl font-bold text-[#35447C] pb-6 uppercase">Popcorn of Music City</div>
-                <p class="pb-4">Felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.</p>
-                <a href="#" class="text-[#D1476B] font-bold hover:border-b-2 border-[#DF4C73] pt-6">Pedigree Profile</a>
-            </div>
-        </div>
-        <div class="flex justify-center">
-            <a href="#"><button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold py-4 px-8 mt-16 rounded-md text-center flex items-center inline-flex">
-            View All Dogs 
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-            </button></a>
-        </div>
-    </div>
-
-    <div class="container mx-auto max-w-screen-lg relative mt-96">
-        <h2 id="puppies" class="text-5xl font-bold text-[#2C4659] flex flex-col mb-14 text-center" style="font-family: 'Pacifico', cursive;">Available Pups<br><img src="headers-line.png" class="object-none -z-10" /></h2>
-        <div class="grid grid-cols-1 gap-4">
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md grid grid-cols-2 gap-4">
-                <div class="flex justify-center"><img src="./puppy-delilah.png" class="h-auto" /></div>
-                <div class=""><p class="text-3xl font-bold text-[#35447C]">Delilah</p>
-                    $2695.00 | Financing Available
-                <br><strong class="text-[#35447C]">Gender:</strong> Female 
-                <br><strong class="text-[#35447C]">Birth Date:</strong> 5/13/2022 
-                <br><strong class="text-[#35447C]">Sire:</strong> Strait Layne's Heart
-                <br><strong class="text-[#35447C]">Dam:</strong> Raine of Paws
-                <p class="pt-3">Odio morbi quis commodo odio aenean sed adipiscing diam donec. Ac orci phasellus egestas tellus. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Ultricies integer quis auctor elit sed vulputate mi sit amet.</p>
-                <a href="#"><button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold py-4 px-8 mt-16 rounded-md text-center flex items-center inline-flex">Gallery</button></a>
-                    <a href="#"><button class="bg-[#D1476B] hover:bg-[#B73B5C] text-white font-semibold py-4 px-8 mt-16 rounded-md text-center flex items-center inline-flex">Reserve Delilah!</button></a>
-                </div>
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md">
-                <div class="flex justify-center"><img src="./ourdogs-nash.png" class="h-auto" /></div>
-                <p class="text-sm font-bold text-[#35447C] pt-6 uppercase">Nash, Champion</p>
-                <div class="text-xl font-bold text-[#35447C] pb-6 uppercase">Strait Layne's Heart</div>
-                <p class="pb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-                <a href="#" class="text-[#D1476B] font-bold hover:border-b-2 border-[#DF4C73] pt-6">Pedigree Profile</a>
-            </div>
-            <div class="bg-[#FCFCFC] rounded-lg p-8 drop-shadow-md">
-                <div class="flex justify-center"><img src="./ourdogs-popcorn.png" class="h-auto" /></div>
-                <p class="text-sm font-bold text-[#35447C] pt-6 uppercase">Popcorn</p>
-                <div class="text-xl font-bold text-[#35447C] pb-6 uppercase">Popcorn of Music City</div>
-                <p class="pb-4">Felis imperdiet proin fermentum. Sed enim ut sem viverra. Condimentum lacinia quis vel eros. Vitae tortor condimentum lacinia.</p>
-                <a href="#" class="text-[#D1476B] font-bold hover:border-b-2 border-[#DF4C73] pt-6">Pedigree Profile</a>
-            </div>
-        </div>
-
-        
-    </div>
-
-<p>beep</p>
+    <script src="./index.js" async defer></script>
   </body>
-  </html>
+</html>

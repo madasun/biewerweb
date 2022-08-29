@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    margin: 0 auto; 
+  	float: none !important; 
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;    
+    background-color: #414949;
+    color: #29221E;
+    font-size: 18px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+  
+@media screen and (min-width: 650px) {
+    ul {
+      display: flex;
+    }
+}
+  
+li {
+    list-style: none;
+}
+  
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    border-top: 4px solid #1A1A1A;
+    z-index: 100;
+}
+
+.active_header {
+  background: black;
+}
+  
+a {
+  text-decoration: none;
+}
+
+:focus {
+    outline: 0.2em solid #8AD1D7;
+    outline-offset: .4rem;
+}
+
+nav li {
+    padding: 15px 30px;
+}
+  
+nav li a {
+    color: #F8F6F4;
+    text-decoration: none;
+    transition: 0.5s ease;
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: .04rem;
+    font-size: 16px;
+    font-weight: bold;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+
+nav li a:hover {
+    color: #8AD1D7;
+}
+
+.contact-link {
+    border-bottom: 2px solid #8AD1D7;
+    padding-bottom: 2px;
+}
+
+.hamburger {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+  
+.hamburger .hamburger-lines {
+    background-color: #F8F6F4;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 1));
+}
+  
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.mobile-menu-open .hamburger .hamburger-lines:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+
+.mobile-menu-open .hamburger .hamburger-lines:nth-child(2) {
+  display: none;
+}
+
+.mobile-menu-open .hamburger .hamburger-lines:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+@media screen and (min-width: 650px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.logo {
+  max-height: 60px;
+  margin-bottom: 10px;
+}
+
+.hero {
+	height: 865px;
+  display: flex;
+	box-sizing: border-box;
+	color: #F8F6F4;
+	background: url(herodog2.png) center center no-repeat;
+  background-color: #F2EDE7;
+	background-size: cover;
+  padding: 0 150px;
+}
+
+.hero .overlay {
+  display: flex;
+  align-items: center;
+  margin: 0 !important;  
+}
+
+.hero-perfect {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  width: 500px;
+}
+
+.hero-text {
+  padding: 20px;
+  filter: drop-shadow(0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5));
+  
+}
+
+.text-block {
+  max-width: 800px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.titles {
+  font-family: 'Bitter', serif; 
+  color: #895C47; 
+  font-size: 28px; 
+  padding-bottom: 15px;
+}
+
+.about-us {
+  background-color: #F2EDE7;
+  padding-top: 80px;
+  line-height: 1.5em;
+}
+
+.brown-title {
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  color: #A3552E;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding-bottom: 10px;
+}
+
+.other-title {
+  font-size: 32px;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  font-weight: bold;
+  color: #2C4659;
+  line-height: 1.3em;
+}
+
+.wrapper {
+  border-top: 1px solid #D6C8C1;
+  border-bottom: 1px solid #D6C8C1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-image: url(bg-texture.png);
+}
+
+.wrapper .content {
+  max-width: 600px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 30px 0;
+}
+
+
+.content ul {
+  padding: 10px 23px;
+  display: inline-block;
+}
+
+.content li {
+  background: url(bullet-bone.png) no-repeat left;
+  background-size: 20px;
+  padding: 10px 30px;
+}
+
+.content p {
+  padding: 10px 0;
+}
+
+.about-cards {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.card {
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 55px 25px;
+  box-shadow: 0px 5px 3px #a8a39d;
+  margin-bottom: 30px;
+}
+
+.about-cards p {
+  padding: 25px 0;
+}
+
+.learnbtn {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: .05rem;
+  text-transform: lowercase;
+  background-color: #006970;
+  color: white;
+  padding: 15px 30px;
+} 
+  
+.learnbtn:hover {
+      background-color: #007C85;
+}
+ 
+.content h1 {
+  padding-top: 50px;
+}
+
+.center-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.our-dogs {
+    background-color: #F2EDE7;
+    line-height: 1.5em;
+  }
+
+.dogs-wrapper {
+  width: 100%;
+  background-image: url(bg-texture.png);
+  border-top: 1px solid #D6C8C1;
+}
+
+.dogs-wrapper .content {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+.dogs-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(bg-ourdogs.png);
+  border-top: 1px solid #ABB5B4;
+  border-bottom: 1px solid #94A09F;
+}
+
+.dogcard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0px 3px 3px #636462;
+  padding: 20px;
+  margin: 50px;
+}
+
+.dogcard img {
+  margin-bottom: 20px;
+}
+
+.our-pups {
+  background-color: #F2EDE7;
+  line-height: 1.5em;
+}
+
+.pups-wrapper {
+width: 100%;
+background-image: url(bg-texture.png);
+}
+
+.pups-wrapper .content {
+  max-width: 800px;
+  padding-bottom: 80px;
+}
+
+.available-pups {
+  background-color: #F2EDE7;
+  background-image: url(bg-texture.png);
+  line-height: 1.5em;
+  padding-bottom: 100px;
+}
+
+.pup-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pupcard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 3px #a8a39d;
+  padding: 20px;
+  margin: 30px;
+  text-align: left;
+}
+
+.pupcard img {
+  margin-bottom: 20px;
+  max-height: 300px;
+}
+
+.pupcard h1 {
+  margin: 0;
+}
+
+.contact-us {
+  background-image: url(bg-ourdogs.png);
+  border-top: 1px solid #ABB5B4;
+  border-bottom: 1px solid #94A09F;
+  background-color: #F2EDE7;
+  padding-top: 80px;
+  line-height: 1.5em;
+  padding-bottom: 100px;
+}
+
+.contact-wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  max-width: 800px;
+}
+
+.contact-wrapper > * {
+  flex: 1 100%;
+}
+
+.contact-main {
+  text-align: left;
+  margin: 0;
+  padding: 30px;
+  background: #FCFCFC;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.aside-1 { 
+  background-color: #FCFCFC;
+  display: flex;  
+  flex-flow: column;
+  max-width: 350px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 50px;
+}
+
+.contact-wrapper p {
+  padding: 10px 0;
+}
+
+.input-fields{
+  display: block;
+  max-width: 500px;
+}
+
+.input-fields .input {
+  margin: 10px 0;
+  border: 2px solid #9FB2C0;
+  padding: 10px;
+  color: #262626;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .mobile-menu-open nav {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    background-color: #262626;
+    visibility: visible;
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+
+  .hero {
+    padding: 0 !important;
+    height: 200px;
+    background-size: cover;
+  }
+  
+  .hero p {
+    display: none;
+  }
+  
+  .hero-perfect {
+    display: none;
+  }  
+
+  .other-title {
+    font-size: 22px;
+    margin: 10px;
+  }
+
+  .about-us {
+    padding-top: 30px;
+  }
+
+  .line-media {
+    display: none;
+  }
+
+  .titles {
+    text-align: center;
+  }
+
+  .about-cards {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  .text-block {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+
+  .about-dogs {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+
+  .content ul {
+    padding: 1px;
+  }
+  
+  .image img, .center-photo {
+    display: none;
+  }
+
+  .about-us .content {
+    margin-bottom: 80px;
+  }
+
+  .dogcard img {
+    height: 250px;
+  }
+
+  .pupcard img {
+    height: 250px;
+  }
+
+  .contact-main, .aside-1 {
+    border-radius: 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .contact-main {
+    flex: 1 0px;
+  }
+  .aside-1 {
+    order: 1;
+  } 
+  .contact-main {
+    order: 2;
+  }
+}
