@@ -129,7 +129,7 @@ nav li a:hover {
   display: flex;
 	box-sizing: border-box;
 	color: #F8F6F4;
-	background: url(herodog2.png) center center no-repeat;
+	background: url(images/herodog2.png) center center no-repeat;
   background-color: #F2EDE7;
 	background-size: cover;
   padding: 0 150px;
@@ -201,7 +201,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   width: 100%;
-  background-image: url(bg-texture.png);
+  background-image: url(images/bg-texture.png);
 }
 
 .wrapper .content {
@@ -226,7 +226,7 @@ nav li a:hover {
 }
 
 .content li {
-  background: url(bullet-bone.png) no-repeat left;
+  background: url(images/bullet-bone.png) no-repeat left;
   background-size: 20px;
   padding: 10px 30px;
 }
@@ -295,7 +295,7 @@ nav li a:hover {
 
 .dogs-wrapper {
   width: 100%;
-  background-image: url(bg-texture.png);
+  background-image: url(images/bg-texture.png);
   border-top: 1px solid #D6C8C1;
 }
 
@@ -310,9 +310,10 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: url(bg-ourdogs.png);
+  background-image: url(images/bg-ourdogs.png);
   border-top: 1px solid #ABB5B4;
   border-bottom: 1px solid #94A09F;
+  padding: 20px 0;
 }
 
 .dogcard {
@@ -337,7 +338,7 @@ nav li a:hover {
 
 .pups-wrapper {
 width: 100%;
-background-image: url(bg-texture.png);
+background-image: url(images/bg-texture.png);
 }
 
 .pups-wrapper .content {
@@ -347,7 +348,7 @@ background-image: url(bg-texture.png);
 
 .available-pups {
   background-color: #F2EDE7;
-  background-image: url(bg-texture.png);
+  background-image: url(images/bg-texture.png);
   line-height: 1.5em;
   padding-bottom: 100px;
 }
@@ -379,7 +380,7 @@ background-image: url(bg-texture.png);
 }
 
 .contact-us {
-  background-image: url(bg-ourdogs.png);
+  background-image: url(images/bg-ourdogs.png);
   border-top: 1px solid #ABB5B4;
   border-bottom: 1px solid #94A09F;
   background-color: #F2EDE7;
