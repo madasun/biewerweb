@@ -9,7 +9,7 @@ And as a bonus: cute dogs.
 The website before and after.
 
 ![Dog Breeder site before](https://i.imgur.com/nqhLG6Q.png) 
-![Dog Breeder site after](https://i.imgur.com/OZNoZfb.png)
+![Dog Breeder site after](https://i.imgur.com/hWdeUwi.png)
 
 # Beginning
 
